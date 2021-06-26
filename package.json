@@ -1,0 +1,8 @@
+{
+  "name": "todo-ui",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "heroku-postbuild": "cd todo-ui && npm install && npm run build"
+  }
+}

@@ -31,7 +31,7 @@ class App extends React.Component {
    */
   componentDidMount() {
 
-    fetch('/users/')
+    fetch('/api/v1/users/')
         .then(res => res.json())
         .then(json => {
           this.setState({
