@@ -1,1 +1,1 @@
-web: touch /tmp/app-initialized && bin/start-nginx gunicorn --chdir backend config.wsgi:application --log-level=DEBUG --bind unix:/tmp/nginx.socket
+web: gunicorn --chdir backend config.wsgi:application --log-level=DEBUG
